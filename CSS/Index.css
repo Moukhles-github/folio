@@ -1,3 +1,18 @@
+/* 
+
+
+
+
+☆ （ • •）☆
+╔uu══════════════════════╗☆
+  "Moukhles Nicolas 2021"
+╚══════nn════════════════╝
+
+
+
+*/
+
+
 html,
 body {
     margin: 0px;
@@ -62,9 +77,9 @@ nav{
 
 .nav-menu > ul > li > a
 {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 1em;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'poppins';
     letter-spacing: .1em;
     text-decoration: none;
     color:#1E3D69; 
@@ -88,7 +103,7 @@ nav{
 
 .nav-icon
 {
-    margin: auto auto auto 0px;
+    /* margin: auto auto auto 0px; */
 }
 
 .dropdown-icon
@@ -119,7 +134,7 @@ nav{
 
 .intro-title  h1{
     color: #1E3D69;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'poppins';
     font-size: 4em;
     padding: 10px 25px;
     text-align: center;
@@ -226,19 +241,11 @@ nav{
 }
 
 
-.about-portrait > h1
-{   
-    color: #1E3D69;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 3em;
-    /* padding: 10px 25px; */
-    text-align: center;
-}
 
 .about-portrait > img{
     max-width: 450px;
     
-    box-shadow: 0px 4px 8px rgb(134 151 168 / 10%);
+    box-shadow: 0px 4px 8px rgb(134 151 168 / 70%);
     margin-left: auto;
     margin-right: auto;
    
@@ -260,8 +267,7 @@ nav{
     line-height: 1.3em;
     font-size: 1.3em;
     color: #1E3D69;
-  
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'poppins';
     text-align: justify;
     padding: 15px;
 }
@@ -329,32 +335,113 @@ nav{
    max-width: 64px;
 }
 
+/* -------------------------  contact section --------------  */
 
-/* ---------------------- enviroment section ----------------------------- */
-
-.environment-section
+.contact-section
 {
-    padding: 50px;
+    padding:50px;
 }
 
-.environment-container
+.contact-container
 {
-    margin: auto;
-    background-color:black ;
-    
+    background-color: white;
+    padding: 50px;  
+    outline: 3px solid #1E3D69;
+    box-shadow: -10px 10px grey;
     max-width: 1400px;
-    
+    margin: auto;
 }
 
-.environment-container > div 
+
+.contact-types
 {
-    margin: auto;
-    max-width: 450px;
-    box-sizing: border-box;
-    flex-basis: 30%;
-    background: chartreuse;
-    padding: 40px;
+    margin-bottom: 40px;
 }
+
+.contact-types > div
+{
+    box-shadow: 0px 4px 8px rgb(134 151 168 / 10%);   
+    outline: 1px solid #eee;
+    padding: 15px;
+    box-sizing: border-box;
+    text-align: center;
+    flex-basis: 47%;
+    margin-bottom: 30px;
+    transition: all .5s;
+    font-family: 'poppins';
+    
+    color: #1E3D69;
+}
+
+.contact-types >div:hover
+{
+    box-shadow: -8px 8px #1E3D69 ;
+    transform: translate(3px, -3px);
+}
+
+
+
+.contact-email 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact-email > a 
+{
+    text-decoration: none;
+    color:#1E3D69;
+}
+
+.contact-email > img
+{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-social
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.social-grid
+{
+    /* background-color: black; */
+    padding: 0px;
+    
+    list-style: none;   
+}
+
+
+
+.social-grid > li > div 
+{
+    
+    padding-bottom: 0em;
+    margin-bottom: 10px;
+}
+
+.social-grid > li > div > a
+{
+    color: #1E3D69;
+    text-decoration: none;
+    font-size: .8em;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -362,28 +449,136 @@ nav{
 
 /* ----------------- media queries ------------------- */
 
+
+
+
+
+@media (min-width: 500px)
+{
+    .social-grid
+    {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        column-gap: 10px;
+        margin:0px;
+    }
+
+    .social-grid
+    {
+        margin: 0px
+    }
+
+}
+
+
 @media (max-width: 600px)
 {
     
+    /* about section */
+
+    .intro-title > h1
+    {
+        font-size: 2em !important;
+    }
+
     .about-portrait > img
     {
         width: 100%;
     }
 
+    .about-skills-a > p
+    {
+        font-size: .8em;
+        line-height: normal;
+        
+    }
    
 }
 
 
+
+
+@media (max-width: 760px) {
+
+
+    /* about section  */
+    .about-page
+    {
+        padding:15px;
+    }
+
+
+    .about-container
+    {
+        padding: 10px;
+        background-color: #f7f7f7;
+        outline: none;
+        box-shadow: none;
+    }
+
+
+   
+    .skills-container
+    {
+        outline: none;
+        box-shadow: none;
+        background-color: #f7f7f7;
+    }
+
+    .skills-section
+    {
+        padding: 0px;
+    }
+    
+
+    .contact-section{
+        padding: 10px;
+    }
+
+    .contact-container
+    {
+        padding: 10px;
+        background-color: #f7f7f7;
+        outline: none;
+        box-shadow: none;
+    }
+
+
+
+ /* skills section  */
+    .skills-grid
+    {
+        grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+        gap:10px;
+    }
+
+    .item-container > p {
+
+        font-size: smaller ;
+    }
+
+
+    .item-container > img {
+        width: 48px;
+    }
+}
+
+
+
+
+
 @media (max-width: 800px)
 {
-
-
+    /* navbar */
     .nav-icon > img
     {
-        width: 100px;
+        width: 110px;
         
     }
     
+
+
+    /* intro section  */
     .intro-title > h1
     {
         font-size: 3em;
@@ -395,9 +590,30 @@ nav{
 
 }
 
+@media (min-width: 900px)
+{
+
+
+    .contact-types
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+}
+
+
+
+
 @media (max-width: 999px)
 {
 
+
+    /* navbar  */
     .nav-container
     {
         /* background-color: #1E3D69; */
@@ -417,7 +633,6 @@ nav{
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
        
     }
-
     .dropdown-icon
     {
         
@@ -425,7 +640,7 @@ nav{
         display: block;
     }
 
-    .nav-menu:hover #dropdown-content
+    .nav-menu:hover .dropdown-content 
     {
         display: block;
     }
@@ -471,6 +686,9 @@ nav{
 
 @media (min-width:1000px)
 {
+
+
+    /* about section  */
     .about-container
     {
     display: flex;
@@ -478,18 +696,22 @@ nav{
     }
 }
 
-@media (min-width: 900px)
-{
-    .environment-container{
-        display: flex;
-        justify-content: space-around;
-    }
-}
+
+
+
+/* 
 
 
 
 
+☆ （ • •）☆
+╔uu══════════════════════╗☆
+  "Moukhles Nicolas 2021"
+╚══════nn════════════════╝
 
+
+
+*/
 
 
 
