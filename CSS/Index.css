@@ -206,7 +206,7 @@ nav {
 /* ---------------------------- skils section ---------------------------- */
 
 .skills-section {
-  /* background-color: black; */
+  
   padding: 50px;
 }
 
@@ -257,8 +257,55 @@ nav {
   width: 100%;
   max-width: 64px;
 }
+/*-------------------------- Projects Container -------------------------------------*/
+.projects-section
+{
+  padding: 50px;
+}
 
-/* -------------------------  contact section --------------  */
+.projects-container
+{
+ max-width: 1600px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  gap: 75px 50px;
+  
+}
+
+
+.projects-container> div
+{
+  padding: 25px;
+  border: 3px solid #1e3d69;
+  box-shadow: -5px 5px gray;
+  /* margin:auto auto 20px auto; */
+
+
+}
+.project
+{
+  display: flex;
+  align-items: baseline;
+}
+
+.project-image > img
+{
+  max-width: 500px;
+  width: 100%;
+
+  
+}
+
+
+
+
+
+
+
+
+
+/* -------------------------  contact section ----------------------------------------*/
 
 .contact-section {
   padding: 50px;
