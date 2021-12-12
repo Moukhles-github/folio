@@ -158,6 +158,31 @@ nav {
 
 /* --------------------   about section  --------------------- */
 
+.about-page > span
+{
+  font-size: 1em;
+  font-family:  'Courier New', Courier, monospace;
+  position: relative;
+  padding-left: 80px;
+  color: #1e3d69;
+}
+
+.about-page > span::before
+{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 50px;
+  height: 1px;
+  background: #333;
+}
+
+.about-page > h2{
+  font-family: 'poppins';
+  color: #1e3d69;
+}
+
 .about-page {
   padding: 50px;
 }
@@ -209,6 +234,35 @@ nav {
   
   padding: 50px;
 }
+
+.skills-section > h2 {
+
+  font-family: 'poppins';
+  color: #1e3d69;
+  padding-left: 15px;
+
+}
+
+.skills-section > span
+{
+  font-size: 1em;
+  font-family:  'Courier New', Courier, monospace;
+  position: relative;
+  padding-left: 80px;
+  color: #1e3d69;
+}
+
+.skills-section > span::before
+{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 50px;
+  height: 1px;
+  background: #333;
+}
+
 
 .skills-container {
   padding: 25px;
@@ -263,6 +317,30 @@ nav {
   padding: 50px;
 }
 
+.projects-section > h2 {
+  font-family: 'poppins';
+  color: #1e3d69;
+
+}
+.projects-section > span
+{
+  font-size: 1em;
+  font-family:  'Courier New', Courier, monospace;
+  position: relative;
+  padding-left: 80px;
+  color: #1e3d69;
+}
+
+.projects-section > span::before
+{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 50px;
+  height: 1px;
+  background: #333;
+}
 .projects-container
 {
  max-width: 1600px;
@@ -276,26 +354,103 @@ nav {
 
 .projects-container> div
 {
+  font-family: 'poppins';
   padding: 25px;
   border: 3px solid #1e3d69;
   box-shadow: -5px 5px gray;
   /* margin:auto auto 20px auto; */
-
-
 }
-.project
+
+
+
+.project > div 
 {
-  display: flex;
-  align-items: baseline;
+  padding: 10px;
+  box-sizing: border-box;
+ 
 }
 
+.project > p 
+{
+  text-align: center;
+
+}
+.project-image
+{
+  text-align: center;
+}
 .project-image > img
 {
   max-width: 500px;
-  width: 100%;
-
-  
+  box-shadow: 0px 4px 8px rgb(134 151 168 / 70%);
 }
+
+.project-content
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  box-sizing: border-box;
+}
+
+.prj-tags
+{
+  flex-basis:40%;
+}
+
+.prj-links
+{
+  flex-basis: 40%
+}
+.tags-grid
+{
+  
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+  gap: 10px;
+  padding-left: 0;
+}
+
+.tags-grid > li 
+{
+  box-sizing: border-box;
+  text-align: center;
+  border: #333;
+  border-radius: 5%;
+  box-shadow: 0px 4px 8px rgb(134 151 168 / 30%);
+  color: #1e3d69;
+  background-color: white;
+}
+
+.prj-links > ul
+{
+  
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+  gap: 10px;
+  padding-left: 0;
+
+}
+
+.prj-links > ul > li
+{
+  text-align: center;
+}
+
+#github-icon
+{
+  max-width: 48px;
+}
+
+#computer-icon
+{
+  max-width: 48px;
+}
+
+
+
 
 
 
@@ -310,6 +465,32 @@ nav {
 .contact-section {
   padding: 50px;
 }
+
+.contact-section > h2
+{
+  font-family: 'poppins';
+}
+
+
+.contact-section > span
+{
+  font-size: 1em;
+  font-family:  'Courier New', Courier, monospace;
+  position: relative;
+  padding-left: 80px;
+}
+
+.contact-section > span::before
+{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 50px;
+  height: 1px;
+  background: #333;
+}
+
 
 .contact-container {
   background-color: white;
@@ -479,6 +660,16 @@ nav {
     font-size: 0.8em;
     line-height: normal;
   }
+
+  .project-content
+  {
+    display: block;
+  }
+
+  .project-image > img
+  {
+    width: 100%;
+  }
 }
 
 @media (max-width: 760px) {
@@ -528,6 +719,45 @@ nav {
   .item-container > img {
     width: 48px;
   }
+
+  /* projects grid  */
+  .projects-section
+  {
+    padding: 20px;
+  }
+
+
+  .projects-container
+  {
+    display: block;
+    
+  }
+
+  .project 
+  {
+    
+    display: block;
+    margin: auto auto 20px auto ;
+  }
+
+  .projects-container> div
+  {
+   border: 1px solid #eee;
+    box-shadow: 0px 4px 8px rgb(134 151 168 / 10%);
+    
+  }
+
+  .project > div 
+  {
+    margin: auto;
+  }
+
+  .project-image
+  {
+    text-align: center;
+  }
+
+
 }
 
 @media (max-width: 800px) {
