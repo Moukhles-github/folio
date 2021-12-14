@@ -8,12 +8,10 @@
   <link rel="stylesheet" href="CSS/index.css" />
   <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="javascript/index.js"></script>
-  <script src="javascript/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="./javascript/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="./javascript/index.js"></script>
+ 
 </head>
-<script>
-
-</script>
 
 <body>
 
@@ -29,11 +27,14 @@
           <img class="dropdown-icon" src="img/Dropdown-icon.png" alt="drodown icon menu">
 
           <ul class="dropdown-content">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">RESUME</a></li>
-            <li><a href="#">PROJECTS</a></li>
-            <li><a href="#">CONTACT</a></li>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#project">PROJECTS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+            
+            
+            
           </ul>
         </div>
 
@@ -42,8 +43,7 @@
     </nav>
   </header>
 
-
-  <section class="intro-page">
+  <section id="home" class="intro-page">
 
     <div class="intro-container">
 
@@ -53,21 +53,31 @@
       </div>
 
       <div class="btn-container">
-        <button class="btn-resume">RESUME</button>
-        <button class="btn-project">PROJECTS</button>
+        <button class="btn-resume" id="btn-resume">RESUME</button>
+        <button class="btn-project"><a href="#project">PROJECTS</a></button>
       </div>
 
       <div class="title-arrow-img">
-        <a href="#"><img src="img/arrow-down.gif" alt="arrow down icon"></a>
+        <a href="#about"><img src="img/arrow-down.gif" alt="arrow down icon"></a>
       </div>
     </div>
 
   </section>
 
+  <Section class="resume">
+   
+    <div id="myModal" class="modal">
+  
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Some text in the Modal..</p>
+      </div>
+    
+    </div>
+  </Section>
 
-
-
-  <section class="about-page">
+  <section id="about" class="about-page">
 
     <span>SOME INFO</span>
     <h2>ABOUT ME</h2>
@@ -93,7 +103,7 @@
   </section>
 
 
-  <section class="skills-section">
+  <section id="skills" class="skills-section">
 
     <span>CHECK OUT MY</span>
     <h2>SKILLS</h2>
@@ -194,7 +204,7 @@
     </div>
   </section>
 
-  <section class="projects-section">
+  <section id="project" class="projects-section">
     <span>TAKE A LOOK AT MY</span>
     <h2>PROJECTS</h2>
 
@@ -221,7 +231,7 @@
           <div class="prj-links">
             <h3>Links:</h3>
             <ul>
-              <li><a href=""><img id="github-icon" src="./img/github-icon.png" alt=""></a></li>
+              <li><a href="https://github.com/Moukhles-github/inventarium"><img id="github-icon" src="./img/github-icon.png" alt=""></a></li>
               <li><a href=""><img src="./img/retro-block.png" alt=""></a></li>
 
             </ul>
@@ -264,6 +274,12 @@
 
       </div>
 
+
+        
+
+
+     
+
       
     </div>
 
@@ -274,7 +290,7 @@
 
 
 
-  <section class="contact-section">
+  <section id="contact" class="contact-section">
     <span>SAY HELLO</span>
     <h2>CONTACT</h2>
     <div class="contact-container">
@@ -293,10 +309,10 @@
           <ul class="social-grid">
 
             <li>
-              <div><a href="#"><img src="img/linkedin-icon.png" alt="" class="linkedin-icon"></a></div>
+              <div><a href="https://www.linkedin.com/in/moukhles-nicolas"><img src="img/linkedin-icon.png" alt="" class="linkedin-icon"></a></div>
             </li>
             <li>
-              <div><a href="#"><img src="img/github-icon.png" alt="" class="Github-icon"></a></div>
+              <div><a href="https://github.com/Moukhles-github"><img src="img/github-icon.png" alt="" class="Github-icon"></a></div>
             </li>
           </ul>
           <p>

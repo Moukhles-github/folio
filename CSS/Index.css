@@ -145,6 +145,11 @@ nav {
   /* width: 130px; */
 }
 
+.btn-container > button > a
+{
+  text-decoration: none;
+}
+
 /* arrow down icon  */
 .title-arrow-img {
   margin-top: auto;
@@ -155,6 +160,48 @@ nav {
 .title-arrow-img > a > img {
   max-width: 120px;
 }
+
+/* ------------------------ MODAL ------------------------*/
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
 
 /* --------------------   about section  --------------------- */
 
@@ -358,7 +405,7 @@ nav {
   padding: 25px;
   border: 3px solid #1e3d69;
   box-shadow: -5px 5px gray;
-  /* margin:auto auto 20px auto; */
+
 }
 
 
@@ -499,6 +546,7 @@ nav {
   box-shadow: -10px 10px grey;
   max-width: 1400px;
   margin: auto;
+  max-height: 1066px;
 }
 
 .contact-container h3 
@@ -573,7 +621,8 @@ nav {
   font-size: 0.8em;
 }
 
-/* contact form contect  */
+/* contact form content  */
+
 
 .form-row {
   display: flex;
@@ -628,7 +677,19 @@ nav {
   padding: 10px 20px;
   box-shadow: -5px 5px gray;
   transition: width 0.1s, padding 0.1s, box-shadow 0.5s;
+  position: relative;
 }
+
+
+.form-row button:hover{
+  
+  cursor: pointer;
+  box-shadow: -7px 7px #1e3d69;
+  padding: 15px 25px;
+  width: 170px;
+}
+
+
 
 /* ----------------- media queries ------------------- */
 
