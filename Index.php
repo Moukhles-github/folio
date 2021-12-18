@@ -54,7 +54,7 @@
 
       <div class="btn-container">
         <button class="btn-resume" id="btn-resume">RESUME</button>
-        <button class="btn-project"><a href="#project">PROJECTS</a></button>
+        <a href="#project"><button class="btn-project" id="btn-project">PROJECTS</button></a>
       </div>
 
       <div class="title-arrow-img">
@@ -72,6 +72,8 @@
       <div class="modal-content">
         <span class="close">&times;</span>
         <p>Some text in the Modal..</p>
+
+        <div><embed src="" type=""></div>
       </div>
     
     </div>
@@ -84,7 +86,7 @@
     <div class="about-container">
       <div class="about-portrait">
 
-        <img src="img/Portfolio-pic.jpg" alt="portrait-myself">
+        <img src="img/portrait.jpg" alt="portrait-myself">
       </div>
 
       <div class="about-skills">

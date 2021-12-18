@@ -20,10 +20,10 @@ $( document ).ready(function() {
      },500);
     }) 
     
-    $('.btn-container > button > a').on('click', function(){
-      $("html, body").animate({
-       scrollTop: $($.attr(this, 'href')).offset().top
-     },500);
+    $('.btn-container > a').on('click', function(){
+     $("html, body").animate({
+      scrollTop: $($.attr(this, 'href')).offset().top
+    },500);
     }) 
  
  // Get the modal

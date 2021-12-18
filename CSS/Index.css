@@ -145,6 +145,30 @@ nav {
   /* width: 130px; */
 }
 
+.btn-container > a > button {
+  font-family: "Courier New", Courier, monospace;
+  color: #1e3d69;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  text-align: center;
+  margin: 10px 20px;
+  width: 150px;
+  outline: 2px solid #1e3d69;
+  background-color: white;
+  border: none;
+  padding: 10px 20px;
+  box-shadow: -5px 5px gray;
+  transition: width 0.1s, padding 0.1s, box-shadow 0.5s;
+}
+
+.btn-container > a > button:hover {
+  cursor: pointer;
+  box-shadow: -7px 7px #1e3d69;
+  padding: 15px 25px;
+  width: 170px;
+  /* width: 130px; */
+}
+
 .btn-container > button > a
 {
   text-decoration: none;
