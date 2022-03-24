@@ -327,26 +327,26 @@
       <h3>Contact form</h3>
       <div class="contact-form">
 
-        <form action="#">
+        <div class= contact-form-container>
           <div class="form-row"><label for="" class="contact-name">Name:</label>
-            <input type="text" placeholder="Your Name" class="input-name">
+            <input type="text" placeholder="Your Name" id="input-name">
           </div>
           <div class="form-row"><label for="" class="contact-name">Email:</label>
-            <input type="text" placeholder="Your Email" class="input-name">
+            <input type="text" placeholder="Your Email" id="input-email">
           </div>
           <div class="form-row"><label for="" class="contact-name">Subject:</label>
-            <input type="text" placeholder="Subject " class="input-name">
+            <input type="text" placeholder="Subject" id="input-subject">
           </div>
 
           <div class="form-row"> <label for="" class="contact-message">Message:</label>
-            <textarea class="input-message" placeholder="Your Message" cols="30" rows="10"></textarea>
+            <textarea id="input-message" placeholder="Your Message" cols="30" rows="10"></textarea>
           </div>
 
           <div class="form-row">
             <button class="form-btn">Send</button>
           </div>
 
-        </form>
+</div>
 
       </div>
 
