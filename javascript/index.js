@@ -66,17 +66,82 @@ $(document).ready(function () {
 
   // Get all values 
   $(".form-btn").on('click', function () {
+
     var pname = $("#input-name").val();
     var pemail = $("#input-email").val();
     var psubject = $("#input-subject").val();
     var ptext = $("#input-message").val();
+    var values = [pname, pemail, psubject, ptext];
 
-    submitmessage(pname, pemail, psubject, ptext);
+
+
+    alert(escape(pname));
+    // if (checkvalues(values) && checkemail(pemail))
+    // {
+    //     submitmessage(pname, pemail, psubject, ptext);
+    // }
+    // else {
+
+      
+    // }
+
   })
+
+
+
+
+  function checkemail(email) {
+    var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    var check = regex.test(email);
+    if (check)
+    {
+      return check; 
+    }
+    else{
+      var emptyfieldsalert = $("#contact-empty-fields");
+      emptyfieldsalert.text("Please Set a Correct Address ");
+      emptyfieldsalert.css("visibility", "visible");
+      return check;
+    }
+  }
+
+
+  function checkvalues(values) //takes an array
+  {
+    var emptyfieldsalert = $("#contact-empty-fields");
+    var flag = true;
+    for (var i = 0; i < values.length; i++) {
+      if (values[i] == "") {
+        flag = false;
+        var emptyinput = $(".contact-form-container").children().siblings().eq(i).children().eq(0);
+        emptyinput.css("color", "red");
+        emptyfieldsalert.text("Please fill the empty fields.*");
+        emptyfieldsalert.css("visibility", "visible");
+      }
+      else {
+        var emptyinput = $(".contact-form-container").children().siblings().eq(i).children().eq(0);
+        emptyinput.css("color", "red");
+      }
+    }
+
+    if (flag) {
+      emptyfieldsalert.css("visibility", "hidden");
+      return true;
+    }
+    else {
+      
+      return false;
+    }
+
+  }
+
 
 
   // Insert the values 
   function submitmessage(pname, pemail, psubject, ptext) {
+
+    values = [pname, pemail, psubject, ptext];
+
     $.ajax({
       type: 'GET',
       url: "./ws/message.ws.php",
@@ -94,8 +159,12 @@ $(document).ready(function () {
       success: function (data, textStatus, xhr) {
 
         if (data != -1) {
-          alert("Successful");
-          window.location.reload();
+          $("#contact-empty-fields").css("visibility", "visible");
+          $("#contact-empty-fields").css("color", "black");
+          $("#contact-empty-fields").text("Message Sent!");
+
+          setTimeout(() => { emptyvalues(values), $("#contact-empty-fields").css("visibility", "hidden"); }, 500);
+
         }
         else {
           data = JSON.parse(xhr.responseText);
@@ -103,11 +172,32 @@ $(document).ready(function () {
         }
       },
       error: function (xhr, status, errorThrown) {
-   		  
+
         alert(status + errorThrown);
       }
-    }
-    )
+    })
+
   }
 
+
+  function emptyvalues(values) {
+
+
+    for (var i = 0; i < values.length; i++) {
+      if (values[i] !== "") {
+
+        var emptyinput = $(".contact-form-container").children().siblings().eq(i).children().eq(1).val("");
+
+      }
+      // else {
+      //   var emptyinput = $(".contact-form-container").children().siblings().eq(i).children().eq(1);
+      //   emptyinput.css("color", "black");
+      // }
+    }
+  }
+
+  ///////////////////////////// /////////////////////////
 })
+
+
+

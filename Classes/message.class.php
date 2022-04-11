@@ -49,7 +49,7 @@ class _message
 	{
 
 			//query 
-			$sqlQuery = "INSERT INTO `contact-form` (`form_id`, `form_name`, `form_email`, `form_subject`, `form_text`, `form_status`) VALUES (NULL, '$person_name', '$person_email', '$person_subject', '$person_text', '1');";
+			$sqlQuery = 'INSERT INTO `contact-form` (`form_id`, `form_name`, `form_email`, `form_subject`, `form_text`, `form_status`) VALUES (NULL, "$person_name", "$person_email", "$person_subject", "$person_text", "1")';
 
 			try 
 			{

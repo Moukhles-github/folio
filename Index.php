@@ -329,10 +329,10 @@
 
         <div class= contact-form-container>
           <div class="form-row"><label for="" class="contact-name">Name:</label>
-            <input type="text" placeholder="Your Name" id="input-name">
+            <input type="text" placeholder="Your Name" id="input-name" >
           </div>
-          <div class="form-row"><label for="" class="contact-name">Email:</label>
-            <input type="text" placeholder="Your Email" id="input-email">
+          <div class="form-row"><label for="" class="contact-name" >Email:</label>
+            <input type="email" placeholder="Your Email" id="input-email">
           </div>
           <div class="form-row"><label for="" class="contact-name">Subject:</label>
             <input type="text" placeholder="Subject" id="input-subject">
@@ -340,6 +340,11 @@
 
           <div class="form-row"> <label for="" class="contact-message">Message:</label>
             <textarea id="input-message" placeholder="Your Message" cols="30" rows="10"></textarea>
+          </div>
+          
+          <div class="form-row"> <label for="" id="contact-empty-fields" style="color:red; Visibility:hidden">
+            Please fill the empty fields.*
+          </label>
           </div>
 
           <div class="form-row">
