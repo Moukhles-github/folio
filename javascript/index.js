@@ -75,7 +75,7 @@ $(document).ready(function () {
 
 
 
-    alert(escape(pname));
+    // alert(escape(pname));
     // if (checkvalues(values) && checkemail(pemail))
     // {
     //     submitmessage(pname, pemail, psubject, ptext);
@@ -137,49 +137,6 @@ $(document).ready(function () {
 
 
 
-  // Insert the values 
-  function submitmessage(pname, pemail, psubject, ptext) {
-
-    values = [pname, pemail, psubject, ptext];
-
-    $.ajax({
-      type: 'GET',
-      url: "./ws/message.ws.php",
-      data: ({
-        op: 2,
-        person_name: pname,
-        person_email: pemail,
-        person_subject: psubject,
-        person_text: ptext,
-
-      }),
-
-      dataType: 'json',
-      timeout: 5000,
-      success: function (data, textStatus, xhr) {
-
-        if (data != -1) {
-          $("#contact-empty-fields").css("visibility", "visible");
-          $("#contact-empty-fields").css("color", "black");
-          $("#contact-empty-fields").text("Message Sent!");
-
-          setTimeout(() => { emptyvalues(values), $("#contact-empty-fields").css("visibility", "hidden"); }, 500);
-
-        }
-        else {
-          data = JSON.parse(xhr.responseText);
-
-        }
-      },
-      error: function (xhr, status, errorThrown) {
-
-        alert(status + errorThrown);
-      }
-    })
-
-  }
-
-
   function emptyvalues(values) {
 
 
@@ -198,6 +155,12 @@ $(document).ready(function () {
 
   ///////////////////////////// /////////////////////////
 })
+
+
+
+///////////////// Toggle Navbar ///////////////////////////////////////
+
+
 
 
 
