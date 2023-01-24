@@ -22,69 +22,53 @@
 
 
 <style>
-  .hover-underline-animation {
-  display: inline-block;
-  position: relative;
-  color: #1e3d69;
-}
 
-.hover-underline-animation::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #1e3d69;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
-}
-
-.hover-underline-animation:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
 </style>
 
 <body>
-  <header>
+<style>
 
 
-    <nav class="navbar navbar-expand-md mynavbar" >
-      
-      <a href="#home" class="navbar-brand h1">
-        <img src="./img/5.png" alt="">
-      </a>
-      <button class="navbar-toggler nav-menu-btn"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#toggleMobileMenu"
-      aria-controls="toggleMobileMenu"
-      aria-expanded="false"
-      aria-label="Toggle Navigation"
-      style="border:none !important"
-      >
-      <img class="dropdown-icon" src="img/Dropdown-icon.png" alt="drodown icon menu"></button>
-
-
-      
-
-      <div class="collapse navbar-collapse nav-menu" id="toggleMobileMenu">
-        <ul class="navbar-nav text-center">
-          <li class="hover-underline-animation"><a href="#home" class="nav-link">HOME</a></li>
-          <li class="hover-underline-animation"><a href="#about" class="nav-link">ABOUT</a></li>
-          <li class="hover-underline-animation"><a href="#skills" class="nav-link">SKILLS</a></li>
-          <li class="hover-underline-animation"><a href="#project" class="nav-link">PROJECTS</a></li>
-          <li class="hover-underline-animation"><a href="#contact" class="nav-link">CONTACT</a></li>
-        </ul>
-      </div>
-
-    </nav>
-  </header>
-
+  .nav-menu{
+    justify-content: end;
+  }
+</style>
   <section id="home" class="intro-page">
+    <header>
 
+
+      <nav class="navbar navbar-expand-md mynavbar" >
+        
+        <a href="#home" class="navbar-brand h1">
+          <img src="./img/5.png" alt="">
+        </a>
+        <button class="navbar-toggler nav-menu-btn"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#toggleMobileMenu"
+        aria-controls="toggleMobileMenu"
+        aria-expanded="false"
+        aria-label="Toggle Navigation"
+        style="border:none !important"
+        >
+        <img class="dropdown-icon" src="img/Dropdown-icon.png" alt="drodown icon menu"></button>
+  
+  
+        
+  
+        <div class="collapse navbar-collapse nav-menu" id="toggleMobileMenu">
+          <ul class="navbar-nav text-center">
+            <li class="hover-underline-animation"><a href="#home" class="nav-link">HOME</a></li>
+            <li class="hover-underline-animation"><a href="#about" class="nav-link">ABOUT</a></li>
+            <li class="hover-underline-animation"><a href="#skills" class="nav-link">SKILLS</a></li>
+            <li class="hover-underline-animation"><a href="#project" class="nav-link">PROJECTS</a></li>
+            <li class="hover-underline-animation"><a href="#contact" class="nav-link">CONTACT</a></li>
+          </ul>
+        </div>
+  
+      </nav>
+    </header>
+  
     <div class="intro-container">
 
       <div class="intro-title">
@@ -131,8 +115,8 @@
 
       <div class="about-skills">
         <div class="about-skills-a">
-          <p>I'm a software developer with a B.S. in Computer Science and 2 years of Experience currently working in Miami, FL as a software Development Engineer. </p>
-             My Strenghts are: 
+          <p>B.Sc. in Computer Science and 2 years of Experience currently employed in Miami, FL. </p>
+             My Strengths are: 
               <ul>
                 <li>Adaptiveness</li>
                 <li>TeamWork</li>
@@ -168,13 +152,19 @@
           </div>
         </li>
         <li>
-          <div class="item-container"><img src="img/bootstrap.png" alt="bootstrap-icon">
-            <p>Bootstrap</p>
+          <div class="item-container"><img src="img/js.png" alt="JS-icon">
+            <p>JavaScript</p>
           </div>
         </li>
         <li>
-          <div class="item-container"><img src="img/js.png" alt="JS-icon">
-            <p>JavaScript</p>
+          <div class="item-container">
+            <img src="img/angular.png" alt="Csharp-icon">
+            <p>Angular</p>
+          </div>
+        </li>
+        <li>
+          <div class="item-container"><img src="img/bootstrap.png" alt="bootstrap-icon">
+            <p>Bootstrap</p>
           </div>
         </li>
         <li>
@@ -183,23 +173,8 @@
           </div>
         </li>
         <li>
-          <div class="item-container"><img src="img/react-icon.png" alt="React-icon">
-            <p>React</p>
-          </div>
-        </li>
-        <li>
-          <div class="item-container"><img src="img/php-icon.png" alt="PHP-icon">
-            <p>PHP</p>
-          </div>
-        </li>
-        <li>
           <div class="item-container"><img src="img/SQL.png" alt="SQL-icon">
             <p>SQL</p>
-          </div>
-        </li>
-        <li>
-          <div class="item-container"><img src="img/C.png" alt="C-icon">
-            <p>C</p>
           </div>
         </li>
         <li>
@@ -207,134 +182,9 @@
             <p>C#</p>
           </div>
         </li>
-        <li>
-          <div class="item-container"><img src="img/Java.png" alt="Java-icon">
-            <p>Java</p>
-          </div>
-        </li>
-        <li>
-          <div class="item-container"><img src="img/python-icon.png" alt="Python-icon">
-            <p>Python</p>
-          </div>
-        </li>
-        <li>
-          <div class="item-container"><img src="img/android-studio-icon.png" alt="Androis-icon">
-            <p>Android</p>
-          </div>
-        </li>
-        <li>
-          <div class="item-container"><img src="img/Xcode-icon.png" alt="IOS-icon">
-            <p>IOS</p>
-          </div>
-        </li>
-        <li>
-          <div class="item-container"><img src="img/linux-icon.png" alt="Linux-icon">
-            <p>Linux</p>
-          </div>
-        </li>
-        <li>
-          <div class="item-container"><img src="img/Windows.png" alt="Windows-icon">
-            <p>Windows</p>
-          </div>
-        </li>
-        <li>
-          <div class="item-container"><img src="img/Mac-os.png" alt="Mac-icon">
-            <p>Mac</p>
-          </div>
-        </li>
-        <li>
-          <div class="item-container"><img src="img/arduino.png" alt="Arduino-icon">
-            <p>Arduino</p>
-          </div>
-        </li>
       </ul>
     </div>
   </section>
-
-  <!-- <section id="project" class="projects-section">
-    <span>TAKE A LOOK AT MY</span>
-    <h2>PROJECTS</h2>
-
-    <div class="projects-container">
-      <div class="project">
-        <div class="project-image">
-          <h2>Inventarium</h2><img src="img/folio-sc.png" alt="folio">
-        </div>
-
-
-        <p>Website And mobile application that manages inventory and can track items.</p>
-
-        <div class="project-content">
-          <div class="prj-tags">
-            <h3>Technologies:</h3>
-            <ul class="tags-grid">
-              <li>PHP</li>
-              <li>Jquery</li>
-              <li>Arduino</li>
-              <li>SQL</li>
-              <li>Python</li>
-            </ul>
-          </div>
-          <div class="prj-links">
-            <h3>Links:</h3>
-            <ul>
-              <li><a href="https://github.com/Moukhles-github/inventarium"><img id="github-icon"
-                    src="./img/github-icon.png" alt=""></a></li>
-              <li><a href=""><img src="./img/retro-block.png" alt=""></a></li>
-
-            </ul>
-          </div>
-
-        </div>
-
-      </div>
-
-      <div class="project">
-        <div class="project-image">
-          <h2>Inventarium</h2><img src="img/folio-sc.png" alt="folio">
-        </div>
-
-
-        <p>Website And mobile application that manages inventory and can track items.</p>
-
-        <div class="project-content">
-          <div class="prj-tags">
-            <h3>Technologies:</h3>
-            <ul class="tags-grid">
-              <li>PHP</li>
-              <li>Jquery</li>
-              <li>Arduino</li>
-              <li>SQL</li>
-              <li>Python</li>
-            </ul>
-          </div>
-          <div class="prj-links">
-            <h3>Links:</h3>
-            <ul>
-              <li><a href=""><img id="github-icon" src="./img/github-icon.png" alt=""></a></li>
-              <li><a href=""><img src="./img/retro-block.png" alt=""></a></li>
-              <li><a href="#"><img id="computer-icon" src="./img/computer-retro.png" alt=""></a></li>
-
-            </ul>
-          </div>
-
-        </div>
-
-      </div>
-
-
-
-
-
-
-
-
-    </div>
-
-
-
-  </section> -->
-
 
 
 
