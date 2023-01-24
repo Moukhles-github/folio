@@ -27,6 +27,10 @@ body {
 
 /* ------------------------ navbar ----------------------- */
 
+
+  .nav-menu{
+    justify-content:end ;
+  }
 .nav-menu-btn
 {
   border: none !important;
