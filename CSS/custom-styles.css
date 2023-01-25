@@ -29,8 +29,28 @@ body {
 
 
   .nav-menu{
-    justify-content:end ;
+    justify-content:end;
   }
+
+
+  .nav-menu >ul > li {
+    margin-left: 25px ;
+    font-size: large;
+    font-family: poppins;
+    color: #1e3d69;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+  }
+
+  .nav-menu >ul > li>a {
+    color: #1e3d69;
+
+  }
+
+  .nav-menu >ul > li:nth-last-child(1){
+    margin-right: 30px;
+  }
+
 .nav-menu-btn
 {
   border: none !important;
@@ -109,7 +129,7 @@ body {
   max-width: 900px;
 }
 
-.btn-container > button {
+.btn-container > button, .btn-container > a > button {
   font-family: "Courier New", Courier, monospace;
   color: #1e3d69;
   font-weight: bold;
@@ -125,35 +145,12 @@ body {
   transition: width 0.1s, padding 0.1s, box-shadow 0.5s;
 }
 
-.btn-container > button:hover {
+.btn-container > button:hover,.btn-container > button:focus, .btn-container > a > button:hover  {
   cursor: pointer;
   box-shadow: -7px 7px #1e3d69;
   padding: 15px 25px;
   width: 170px;
-  /* width: 130px; */
-}
-
-.btn-container > a > button {
-  font-family: "Courier New", Courier, monospace;
-  color: #1e3d69;
-  font-weight: bold;
-  letter-spacing: 0.1em;
-  text-align: center;
-  margin: 10px 20px;
-  width: 150px;
-  outline: 2px solid #1e3d69;
-  background-color: white;
-  border: none;
-  padding: 10px 20px;
-  box-shadow: -5px 5px gray;
-  transition: width 0.1s, padding 0.1s, box-shadow 0.5s;
-}
-
-.btn-container > a > button:hover {
-  cursor: pointer;
-  box-shadow: -7px 7px #1e3d69;
-  padding: 15px 25px;
-  width: 170px;
+  outline: 2px solid #1e3d69 !important;
   /* width: 130px; */
 }
 
@@ -368,7 +365,7 @@ body {
 
 .item-container > img {
   width: 100%;
-  max-width: 64px;
+  max-width: 48px;
 }
 /*-------------------------- Projects Container -------------------------------------*/
 .projects-section
@@ -693,8 +690,9 @@ body {
 }
 
 
-.form-row button:hover{
+.form-row button:hover, .form-row button:focus{
   
+  outline: 2px solid #1e3d69 !important;
   cursor: pointer;
   box-shadow: -7px 7px #1e3d69;
   padding: 15px 25px;
